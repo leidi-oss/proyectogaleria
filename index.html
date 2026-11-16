@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="agregarTabindex()">
+    <header>
+        <span class="brand">Instantes naturales</span>
+        <span class="edition">Colección de paisajes / 01</span>
+    </header>
+    <main>
+        <div class="intro">
+            <div>
+                <p class="eyebrow">UNA PAUSA PARA MIRAR</p>
+                <h1>La naturaleza, de cerca.</h1>
+            </div>
+            <p>Seis paisajes para descubrir sin prisa. Pasa el ratón por una foto o usa la tecla Tab para explorar la colección.</p>
+        </div>
+        <div class="viewer">
+            <div id="image" role="status" aria-live="polite" aria-atomic="true">Pasa el ratón o enfoca una imagen para verla aquí.</div>
+        </div>
+        <section aria-labelledby="coleccion">
+            <div class="collection-head">
+                <h2 id="coleccion">Explora la colección</h2>
+                
+            </div>
+            <div class="gallery">
+            <figure>
+                <img class="preview" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEOm1oBAToJqCSICkRzqFuGrmrDOAaFYA8kikwt0TLIRzjoKD4xgcERJmn&s=10" alt="Pinos verdes al pie de una pared de roca iluminada por el sol." width="1200" height="800"
+                     onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+                <figcaption><span>01</span> Bosque</figcaption>
+            </figure>
+            <figure>
+                <img class="preview" src="https://concepto.de/wp-content/uploads/2018/08/Picos-de-montana.jpg" alt="Cordillera bajo nubes blancas y un valle con pinos en primer plano." width="1200" height="800"
+                     onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+                <figcaption><span>02</span> Montañas</figcaption>
+            </figure>
+            <figure>
+                <img class="preview" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR90b_CwVER7E2vsVtxsSYreCS5MGChtKVrEOUYw5_p3a7GoHH_bm0ppGhO&s=10" alt="Cabaña de madera junto a un lago que refleja las montañas." width="1200" height="800"
+                     onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+                <figcaption><span>03</span> Lago</figcaption>
+            </figure>
+            <figure>
+                <img class="preview" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEQagftcOYNnBO6y1vyZoIaJ5HJJPKBlyvxkiTkr1CA9NywR9x3WIjjjNR&s=10" alt="Olas turquesas sobre una playa de arena al atardecer." width="1200" height="800"
+                     onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+                <figcaption><span>04</span> Mar</figcaption>
+            </figure>
+            <figure>
+                <img class="preview" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK0rnsSEXx3XsGcEVScU2NRoUuDZ2m8OJb8IFt2-4Xkx3e2yZuTqYRUUU&s=10" alt="Mesetas de roca rojiza en un desierto bajo el cielo azul." width="1200" height="800"
+                     onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+                <figcaption><span>05</span> Desierto</figcaption>
+            </figure>
+            <figure>
+                <img class="preview" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUlrFW6oBQ2VJWZS0akdQoqhPnbo2tU6T5EVfsSEF8IsGCpXXtfDMgUZ4&s=10 alt="Cascada de varios saltos entre vegetación verde y rocas." width="1200" height="800"
+                     onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+                <figcaption><span>06</span> Cascada</figcaption>
+            </figure>
+            </div>
+        </section>
+      
+    </main>
+    <footer>
+      
+        <p> Proyecto final de JavaScript</p>
+    </footer>
+</body>
+</html>
